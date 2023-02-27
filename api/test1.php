@@ -13,10 +13,10 @@ $woocommerce = new Client(
   $_POST['consumer_secret'], 
   [
     'wp_api' => true,
-    'version' => 'wc/v3',
+    'version' => 'wc/v2',
     'timeout' => 4000,
     'verify_ssl'=> false
-  ]
+  ] 
 );
 
 print_r($woocommerce);
