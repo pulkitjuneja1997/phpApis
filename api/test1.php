@@ -1,6 +1,6 @@
-<?php echo 'test1'; 
+<?php echo 'test1'; echo __DIR__ . '../vendor/autoload.php'; echo __DIR__ . '/../vendor/autoload.php'; 
 
-require __DIR__ . '../vendor/autoload.php';
+require_once  __DIR__ . '../vendor/autoload.php';
 use Automattic\WooCommerce\Client;
 
 print_r($_POST);
