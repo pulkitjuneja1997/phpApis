@@ -25,7 +25,7 @@
             "dest": "/index.html"
         },
         {
-            "src": "/users",
+            "src": "/users", "methods": ["POST"]
             "dest": "/api/test1"
         },
         {
