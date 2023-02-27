@@ -329,6 +329,8 @@ class HttpClient
         // Register response.
         $this->response = new Response($code, $headers, $body);
 
+        echo 'response';
+        print_r($this->response);
         return $this->getResponse();
     }
 

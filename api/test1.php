@@ -14,7 +14,7 @@ $woocommerce = new Client(
   [
     'wp_api' => true,
     'version' => 'wc/v2',
-    'timeout' => 4000,
+    'timeout' => 400,
     'verify_ssl'=> false
   ] 
 );
