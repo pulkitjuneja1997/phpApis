@@ -12,7 +12,9 @@ $woocommerce = new Client(
   $_POST['consumer_key'],
   $_POST['consumer_secret'], 
   [
+    'wp_api' => true,
     'version' => 'wc/v3',
+    'timeout' => 4000
   ]
 );
 
