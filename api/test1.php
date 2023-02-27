@@ -16,6 +16,9 @@ $woocommerce = new Client(
   ]
 );
 
+print_r($woocommerce);
+
+ECHO 'OPPPPPPPPPPPPP';
 print_r($woocommerce->get('products'));
 
 ?>
