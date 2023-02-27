@@ -329,8 +329,6 @@ class HttpClient
         // Register response.
         $this->response = new Response($code, $headers, $body);
 
-        echo 'response';
-        print_r($this->response);
         return $this->getResponse();
     }
 
@@ -400,12 +398,22 @@ class HttpClient
     {
         $body = $this->response->getBody();
 
+        echo 'response';
+        print_r($this->response);
+
+        echo 'body';
+        print_r($body);
+
         // Look for UTF-8 BOM and remove.
         if (0 === strpos(bin2hex(substr($body, 0, 4)), 'efbbbf')) {
             $body = substr($body, 3);
         }
 
         $parsedResponse = \json_decode($body);
+
+        echo 'parsedResponse';
+        print_r($parsedResponse);
+
 
         // Test if return a valid JSON.
         if (JSON_ERROR_NONE !== json_last_error()) {
