@@ -443,6 +443,10 @@ class HttpClient
      */
     public function request($endpoint, $method, $data = [], $parameters = [])
     {
+        echo 'endpoint' ; print_r($endpoint);
+        echo 'method' ; print_r($method);
+        echo 'data' ; print_r($data);
+        echo 'parameters' ; print_r($parameters);
         // Initialize cURL.
         $this->ch = \curl_init();
 
