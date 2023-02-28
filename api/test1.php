@@ -25,7 +25,7 @@ $woocommerce = new Client(
 
 try {
   // Array of response results.
-  $results = $woocommerce->get('customers');
+  $results = $woocommerce->get('products');
   // Example: ['customers' => [[ 'id' => 8, 'created_at' => '2015-05-06T17:43:51Z', 'email' => ...
   echo '<pre><code>' . print_r($results, true) . '</code><pre>'; // JSON output.
 
