@@ -444,9 +444,6 @@ class HttpClient
     public function request($endpoint, $method, $data = [], $parameters = [])
     {
 
-        throw new HttpClientException('cURL Error: ' . 'endpoint'. print_r($endpoint) . 'method' . print_r($method) . 'data' . print_r($data) . 'parameters'. print_r($parameters), 0, $request, $response);
-     
-      
         // Initialize cURL.
         $this->ch = \curl_init();
 
